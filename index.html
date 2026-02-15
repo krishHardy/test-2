@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/style.css"><!--implementing external css -->
+    <!--implementing internal css -->
+    <style>
+        /*flex-container-1*(nav bar)*/
+        .nav-bar {
+            height: 70px;
+            background-color: #FFFBEA;
+            color: #e5e5e9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            border: 2px solid #01461f;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <ul class="nav-pages-links">
+                    <li class="border home"><a href="index.html" target="_blank">Home</a></li>
+                    <li class="border"><a href="products.html" target="_blank">Products</a></li>
+                    <li class="border"><a href="blogs.html" target="_blank">Blogs</a></li>
+                    <li class="border"><a href="research.html" target="_blank">Research</a></li>
+                    <li class=" about-us border"><a href="AboutUs.html" target="_blank">About us</a></li>
+                </ul>
+                <div class="logo ">
+                    <img src="../Assets/images/ecomart_logo.png" alt="EcoMart logo">
+                </div>
+                <div class="nav-search">
+                    <div class="search-logo">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </div>
+                    <input type="text" placeholder="search" name="home-search" class="search-box">
+                </div>
+                <div class="nav-signin border">
+                    <a href="signin.html" target="_blank" class="sign-in"><i class="fa-solid fa-circle-user"
+                            style="color: #046709;"></i></a>
+                </div>
+            </div>
+            <div class="nav-message-panel">
+                <a href="products.html" class="panel-message">
+                    Enjoy free shipping charge on order RS.5&comma;999&plus;
+                    <div class="panel-right-arrow-logo">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-section-img">
+                <h1 class="slogan-main">"Live Green, Save clean"</h1>
+                <h2 class="slogan-second">Sustainable products for everyday eco-warriors</h2>
+                <button id="shopping-button" class="border"><a href="products.html">Start clean</a></button>
+            </div>
+        </section>
+        <section class="calculator-section">
+            <div class="reasons-plus-calculator-section">
+                <div class="reasons">
+                    <p id="first">Why chose Eco Mart&quest;</p>
+                    <p id="second">
+                        <i class="fa-solid fa-check" style="color: #63E6BE;"></i> Sustainable products<br>
+                        <i class="fa-solid fa-check" style="color: #63E6BE;"></i> Plastic-free packaging<br>
+                        <i class="fa-solid fa-check" style="color: #63E6BE;"></i> Carbon neutral shipping
+                    </p>
+                    <p id="third">See your personal impact<i class="fa-solid fa-hand-point-right"
+                            style="color: #FFD43B;"></i><i class="fa-solid fa-hand-point-right"
+                            style="color: #FFD43B;"></i><i class="fa-solid fa-hand-point-right"
+                            style="color: #FFD43B;"></i></p>
+                </div>
+                <div class="calculator">
+                    <div class="calculator-title">
+                        <h1>Eco score calculator</h1>
+                    </div>
+                    <div class="calculator-body">
+                        <div class="question-1">
+                            <p>Q1: Plastic bottles you use per week &quest;&lpar; 0-50 &rpar; </p>
+                            <lable for="answer-1">ANS:</lable>
+                            <input type="number" placeholder="plastic bottles per week" id="answer-1"
+                                name="first-answer" required>
+                        </div>
+                        <div class="question-2">
+                            <p>Q2: Disposable bags you use per month &quest; &lpar;0-100 &rpar; </p>
+                            <lable for="answer-2">ANS:</lable>
+                            <input type="number" placeholder="Disposable bags per month" id="answer-2"
+                                name="second-answer" required>
+                        </div>
+                        <div class="result-button">
+                            <button type="submit" id="calculateButton">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="result">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-page-preview">
+            <div class="preview-title-products">
+                <h1>Exclusive Products</h1>
+            </div>
+            <div class="product-preview product-border">
+                <div class="product-1 product-border"><!-- product-1 div (container-item)-->
+                    <div class="product-detail-1">
+                        <img src="../Assets/images/1Bamboo Water Bottle.jpg" alt="Bamboo Water Bottle  750ml">
+                        <br>
+                        <h3>Bamboo Water Bottle</h3>
+                        <p id="review-1">&#127775;&#127775;&#127775;&#127775;&#127775; &#40;128 reviews&#41;</p>
+                        <br>
+                        <div class="sustanibility-tag-1">
+                            <p><i class="fa-solid fa-recycle" style="color: #11b081;"></i> Compostable</p>
+                        </div>
+                        <br>
+                        <div class="price-1">
+                            <p>
+                                <bold>price:</bold>
+                            </p>
+                            <p id="discountprice"><strong>RS.3&comma;299</strong></p>
+                            <p id="actualprice">RS.3&comma;979</p>
+                            <p id="saved">Saved 17 &percnt;</p>
+                        </div>
+                        <br>
+                        <a href="products.html" class="nav-View-products-1">
+                            <button class="nav-View-products-1">View more products <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-2 product-border"><!-- product-2 div (container-item)-->
+                    <div class="product-detail-2">
+                        <img src="../Assets/images/2Organic Cotton Tote Bag.jpg" alt="Organic cotton tote bag">
+                        <br>
+                        <h3>Organic cotton tote bag</h3>
+                        <p id="review-2">&#127775;&#127775;&#127775;&#127775;&#127775; &#40;89 reviews&#41;</p>
+                        <br>
+                        <div class="sustanibility-tag-2">
+                            <p><i class="fa-solid fa-ban" style="color: #ee1169;"></i> Plastic free</p>
+                        </div>
+                        <br>
+                        <div class="price-2">
+                            <p>
+                                <bold>price:</bold>
+                            </p>
+                            <p id="discountprice"><strong>RS.1&comma;904</strong></p>
+                            <p id="actualprice">RS.2&comma;537</p>
+                            <p id="saved">Saved 25 &percnt;</p>
+                        </div>
+                        <br>
+                        <a href="products.html" class="nav-View-products-2">
+                            <button class="nav-View-products-2">View more products <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-3 product-border"><!-- product-3 div (container-item)-->
+                    <div class="product-detail-3">
+                        <img src="../Assets/images/3LinenNapkin.jpg" alt="Beeswax food wraps">
+                        <br>
+                        <h3>Linen napkin</h3>
+                        <p id="review-3">&#127775;&#127775;&#127775;&#127775;&#127775; &#40;204 reviews&#41;</p>
+                        <br>
+                        <div class="sustanibility-tag-3">
+                            <p><i class="fa-solid fa-recycle" style="color: #258cda;"></i>Recycled</p>
+                        </div>
+                        <br>
+                        <div class="price-3">
+                            <p>
+                                <bold>price:</bold>
+                            </p>
+                            <p id="discountprice"><strong>RS.2&comma;927</strong></p>
+                            <p id="actualprice">RS.3&comma;571</p>
+                            <p id="saved">Saved 18 &percnt;</p>
+                        </div>
+                        <br>
+                        <a href="products.html" class="nav-View-products-3">
+                            <button class="nav-View-products-3">View more products <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-4 product-border"><!-- product-4 div (container-item)-->
+                    <div class="product-detail-4">
+                        <img src="../Assets/images/4 Bamboo Toothbrushes.jpg" alt="Bamboo Toothbrushes">
+                        <br>
+                        <h3>Bamboo Toothbrushes</h3>
+                        <p id="review-4">&#127775;&#127775;&#127775;&#127775;&#127775; &#40;156 reviews&#41;</p>
+                        <br>
+                        <div class="sustanibility-tag-4">
+                            <p><i class="fa-solid fa-broom" style="color: #FFD43B;"></i>Zero waste</p>
+                        </div>
+                        <br>
+                        <div class="price-4">
+                            <p>
+                                <bold>price:</bold>
+                            </p>
+                            <p id="discountprice"><strong>RS.1&comma;299</strong></p>
+                            <p id="actualprice">RS.1&comma;710</p>
+                            <p id="saved">Saved 24 &percnt;</p>
+                        </div>
+                        <br>
+                        <a href="products.html" class="nav-View-products-4">
+                            <button class="nav-View-products-4">View more products <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog&research-page-preview">
+            <div class="preview-title-blog-and-research">
+                <h1>Blogs &amp; research</h1>
+            </div>
+            <div class="blog-research-preview product-border">
+                <div class="recent-blog">
+                    <a href="TechnologyImpact.html">
+                        <div class="blog-detailes">
+                            <div class="blog-img">
+                                <img src="../Assets/images/impact of technology.jpg" alt="blog image">
+                            </div>
+                            <div class="blog-title">
+                                <h1>Technology affects on daily life and business</h1>
+                            </div>
+                            <div class="nav-buttone-read">
+                                <button>Read</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="recent-blog">
+                    <a href="Ecomartproducts.html">
+                        <div class="blog-detailes">
+                            <div class="blog-img">
+                                <img src="../Assets/images/our products.jpg.jpeg" alt="blog image">
+                            </div>
+                            <div class="blog-title">
+                                <h1>Ecomart products</h1>
+                            </div>
+                            <div class="nav-buttone-read-2">
+                                <button>Read</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="recent-research">
+                    <a href="research.html">
+                        <div class="research-detailes">
+                            <div class="research-img">
+                                <img src="../Assets/images/our research.jpg" alt="research image">
+                            </div>
+                            <div class="research-title">
+                                <h1>Our research</h1>
+                            </div>
+                            <div class="nav-button-view">
+                                <button>View</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="back-to-top">
+            <a href="index.html"> <strong>Back to top</strong></a>
+        </div>
+        <div class="footer-links">
+            <div class="links" style="margin-top:15px">
+                <!--implementing inline css for giving margin to element from top of 15px-->
+                <p>Quick Links</p>
+                <a href="AboutUs.html">About Us</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="research.html">Research</a>
+                <a href="contactus.html">contact us</a>
+            </div>
+            <div class="product-links" style="margin-top:15px">
+                <!--implementing inline css for giving margin to element from top of 15px-->
+                <p>Products</p>
+                <a href="compostableproduct.html">Bamboo Water Bottle </a>
+                <a href="durablelonglastingproduct.html">Glass Storage Jars </a>
+                <a href="energyfficientproduct.html">Wool Dryer Balls</a>
+                <a href="recycledproduct.html">Beeswax food wraps</a>
+                <a href="products.html">see more products... </a>
+            </div>
+            <div class="social-media-links" style="margin-top:15px">
+                <!--implementing inline css for giving margin to element from top of 15px-->
+                <p>connect with us</p>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"
+                        style="color: #458cbf;"></i>Facebook</a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"
+                        style="color: #dc5bba;"></i>Instagram</a>
+                <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok" style="color: #000000;"></i>Tiktok</a>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2026 EcoMart all rights reserved.</p>
+            <p>made with <i class="fa-solid fa-recycle" style="color: #16b182;"></i> for a greener planet.</p>
+        </div>
+    </footer>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
